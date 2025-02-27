@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-
-const Color backgroundColor = Color(0xFFCAF0F8);
-const Color loadingColor = Color(0xFF03045E);
+import 'colors.dart';
 
 const TextStyle textStyle = TextStyle(
   fontFamily: 'Lato',
   fontWeight: FontWeight.w400,
   fontSize: 24,
   letterSpacing: 0,
+  color: AppColors.textColor,
 );
 
 const TextStyle loadingTextStyle = TextStyle(
@@ -15,10 +14,11 @@ const TextStyle loadingTextStyle = TextStyle(
   fontWeight: FontWeight.w400,
   fontSize: 24,
   letterSpacing: 0,
-  color: loadingColor,
+  color: AppColors.darkBlue,
 );
 
 final ThemeData appTheme = ThemeData(
   primarySwatch: Colors.blue,
   fontFamily: 'Lato',
+  scaffoldBackgroundColor: AppColors.backgroundColor,
 );
