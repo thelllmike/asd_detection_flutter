@@ -7,4 +7,6 @@ class AppColors {
   static const Color darkBlue = Color(0xFF03045E);
   static const Color textColor = Colors.black;
   static const Color borderColor = Colors.blue;
+  static const Color goodBorder = Color(0xFF58C322); // Green border for positive progress
+  static const Color severeBorder = Color(0xFFD41111); // Red border for negative progress
 }

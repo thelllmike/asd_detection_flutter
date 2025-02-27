@@ -1,5 +1,6 @@
 import 'package:asd_detection_flutter/screens/ProgressSummaryScreen.dart';
 import 'package:asd_detection_flutter/screens/QuestionsScreen.dart';
+import 'package:asd_detection_flutter/screens/SummaryScreen.dart' as summary;
 import 'package:asd_detection_flutter/theme/theme.dart';
 import 'package:asd_detection_flutter/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => const QuestionsScreen(),
+          pageBuilder: (context, animation, secondaryAnimation) => const summary.SummaryScreen(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             return FadeTransition(opacity: animation, child: child);
           },
